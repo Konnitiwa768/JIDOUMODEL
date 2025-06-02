@@ -1,23 +1,22 @@
 modLoader="javafml"
-loaderVersion="[43,)" # 1.19.2 Forgeは43.x系
+loaderVersion="[47,)" # Forge 1.20.1は47.x系
 license="MIT"
 [[mods]]
 modId="jidoumodel"
 version="1.0.0"
 displayName="jidoumodel"
 authors="sakalti"
-description='''jidoumodelの説明をここに書きます'''
+description='''jidoumodelの説明をここに書いてください'''
 
-# 依存関係例
 [[dependencies.jidoumodel]]
     modId="forge"
     mandatory=true
-    versionRange="[43,)"
+    versionRange="[47,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.jidoumodel]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.20)"
+    versionRange="[1.20.1,1.21)"
     ordering="NONE"
     side="BOTH"
