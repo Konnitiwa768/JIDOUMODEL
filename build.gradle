@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'net.minecraftforge.gradle' version '6.0.24' // 最新ForgeGradleプラグインを指定
     id 'maven-publish'
 }
 
@@ -9,16 +9,15 @@ version = '1.0.0'
 
 repositories {
     mavenCentral()
-    maven { url = 'https://files.minecraftforge.net/maven' }
+    maven { url = 'https://maven.minecraftforge.net/' }
 }
 
 minecraft {
     // Minecraftバージョン指定
-    version = "1.19.2-43.2.0" // Forge 1.19.2の推奨バージョン
+    version = "1.20.1-47.2.20" // Forgeの安定版に合わせてください
     runs {
         client {
             workingDirectory project.file('run')
-            // VM引数や環境設定はここに追加
         }
         server {
             workingDirectory project.file('run')
@@ -27,7 +26,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:1.19.2-43.2.0"
+    minecraft "net.minecraftforge:forge:1.20.1-47.2.20"
 }
 
 java {
@@ -44,8 +43,7 @@ jar {
             "Specification-Version": "1",
             "Implementation-Title": project.name,
             "Implementation-Version": project.version,
-            "Implementation-Vendor": "sakalti",
-            "Main-Class": "com.sakalti.moreweapons.MoreWeaponsMod" // Forgeではデフォルトでmain-class不要
+            "Implementation-Vendor": "sakalti"
         ])
     }
 }
